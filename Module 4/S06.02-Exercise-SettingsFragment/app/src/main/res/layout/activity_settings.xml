@@ -11,17 +11,9 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<!-- the menu found in the single day forecast detail -->
-<menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.example.android.sunshine.DetailActivity">
-    <item
-        android:id="@+id/action_share"
-        android:icon="@drawable/abc_ic_menu_share_mtrl_alpha"
-        android:title="@string/action_share"
-        app:showAsAction="always"/>
-
-    <!--TODO (5) Add a Settings option to the detail menu-->
-
-</menu>
+<!-- TODO (7) Make the SettingsFragment the root layout for SettingsActivity -->
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="com.example.android.sunshine.SettingsFragment"
+    android:id="@+id/weather_settings_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
